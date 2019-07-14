@@ -1,4 +1,4 @@
-package chat;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,7 +22,7 @@ public class ChatClient {
 
 
         ) {
-            System.out.println("Welcome! Please enter your name in the following format - 'name: <your-name>':");
+            System.out.println("Welcome! You may enter your name in the following format - 'name: <your-name>':");
             Thread thread = new Thread(() -> {
                 String line = "";
                 while(connected) {
