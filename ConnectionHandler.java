@@ -1,5 +1,3 @@
-package chat;
-
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,8 +8,8 @@ import java.net.Socket;
 
 public class ConnectionHandler implements Runnable {
 
-    private final PrintStream clientOutput;
-    private final BufferedReader clientInput;
+    private PrintStream clientOutput;
+    private BufferedReader clientInput;
     private ChatServer chatServer;
     private ServerSocket serverSocket;
     private String clientName;
