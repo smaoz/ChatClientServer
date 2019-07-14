@@ -1,4 +1,4 @@
-package chat;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -17,7 +17,7 @@ public class ChatServer {
         chatServer.run();
     }
 
-    public void run() throws IOException {
+    private void run() throws IOException {
         try(ServerSocket server = new ServerSocket(PORT_NUMBER)) {
             try {
                 while (true) {
